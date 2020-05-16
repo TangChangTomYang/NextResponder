@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-PJ-ahe">
+                                <rect key="frame" x="74" y="129" width="267" height="79"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.64313725489999995" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="cM0-nQ-ZL7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="点我查看控制器">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFindVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sRw-S7-z6o"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lx0-Ri-Jeg">
+                                <rect key="frame" x="74" y="384" width="278" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8z-kX-sb4">
+                                        <rect key="frame" x="99" y="74" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.54117647059999996" green="0.1529411765" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="KNV-3v-PaP"/>
+                                            <constraint firstAttribute="height" constant="80" id="fVh-Qr-Ud8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnInViewFindVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HSS-nX-Pou"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="z8z-kX-sb4" firstAttribute="centerY" secondItem="Lx0-Ri-Jeg" secondAttribute="centerY" id="28b-mE-XLw"/>
+                                    <constraint firstItem="z8z-kX-sb4" firstAttribute="centerX" secondItem="Lx0-Ri-Jeg" secondAttribute="centerX" id="f7C-oJ-W6G"/>
+                                    <constraint firstAttribute="height" constant="228" id="ihE-aC-SLt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fk3-PJ-ahe" secondAttribute="trailing" constant="73" id="1Xt-oh-DYY"/>
+                            <constraint firstItem="Lx0-Ri-Jeg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="4Nv-an-x1N"/>
+                            <constraint firstItem="Fk3-PJ-ahe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="GHR-zp-VLN"/>
+                            <constraint firstItem="Fk3-PJ-ahe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="KaD-xz-7Ps"/>
+                            <constraint firstItem="Lx0-Ri-Jeg" firstAttribute="top" secondItem="Fk3-PJ-ahe" secondAttribute="bottom" constant="176" id="cPl-HT-eza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lx0-Ri-Jeg" secondAttribute="trailing" constant="62" id="dJt-zD-7tM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460.86956521739131" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+</document>
